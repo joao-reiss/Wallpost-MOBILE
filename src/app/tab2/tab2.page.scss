@@ -1,0 +1,80 @@
+@import "../../global.scss";
+
+.logo{
+    color: $cor_fonte;
+    margin-top: 10px;
+    font-size: 1.5em;
+    text-align: start;
+    margin-left: 10%;
+    font-family: 'Neo Sans';
+    margin-bottom: -0.1%;
+}
+
+.circulo{
+    object-fit: cover;
+    background-color:rgb(216, 209, 209);
+    background-size: 100%;
+    background-position: center;
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 100%;
+}
+
+.circulo-a{
+    padding-left: 70%;
+}
+
+.header-align
+{
+    text-align: center;
+    margin-top: 12vh;
+}
+
+.header
+{
+    font-family: 'Qanelas Medium';
+    font-size: 1.5em;
+}
+.subheader-align
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    // text-align: justify;
+}
+
+.subheader
+{
+    text-align: justify;
+    font-family: 'Qanelas Regular';
+    font-size: 0.90em;
+}
+
+.btn
+{
+    color: $cor_base;
+    border: none;
+    background-color: $cor_fonte;
+    margin-left: 18px;
+    margin-right: 18px;
+    width: 300px;
+    height: 35px;
+    font-family: 'Qanelas Regular';
+    --border-radius: 30px;
+    border-radius: 30px;
+    outline: none;
+    font-size: 1.1em;
+}
+
+.btn-align
+{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.icon
+{
+    margin-left: 6px;
+    font-size: 0.85em;
+}

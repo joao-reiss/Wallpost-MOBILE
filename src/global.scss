@@ -8,6 +8,8 @@
  * For more information on global stylesheets, visit the documentation:
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
+ $cor_fonte: #F15A24;
+ $cor_base: #f2f2f2;
 
 /* Core CSS required for Ionic components to work properly */
 @import "~@ionic/angular/css/core.css";
@@ -24,3 +26,233 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+//Fontes
+
+@font-face {
+    font-family: 'Qanelas Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Fontes/Qanelas Regular'), url('Fontes/QanelasRegular.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Qanelas Medium';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Fontes/Qanelas Medium'), url('Fontes/QanelasMedium.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Qanelas SemiBold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Fontes/Qanelas SemiBold'), url('Fontes/QanelasSemiBold.woff') format('woff');
+    }
+
+    @font-face{
+        font-family: 'Qanelas Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Fontes/Qanelas Bold'), url('Fontes/QanelasBold.woff') format('woff');
+    }
+
+
+    @font-face {
+        font-family: 'Neo Sans';
+        src: local('Neo Sans Bold'), local('Neo-Sans-Bold'),
+            url('Fontes/NeoSans-Bold.woff2') format('woff2'),
+            url('Fontes/NeoSans-Bold.woff') format('woff');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+//Fim das Fontes
+
+
+//Inicio
+
+.homescreen{
+margin-top: 35%;
+background-color: transparent;   
+}
+
+.borda_ondinha{
+    --ion-background-color: #f2f2f2;
+    --background: #f2f2f2 url('img/BORDA---WALLPOST.png') no-repeat 0px 420px / cover !important;
+}
+
+.retorno{
+   --background: #f2f2f2 url('img/BORDA---WALLPOST.png') no-repeat -150px 410px / cover !important;
+}
+
+.tb_borda_estilo{
+    --ion-background-color: #f2f2f2;
+    --background: #f2f2f2 url('img/BORDA---WALLPOST.png') no-repeat 0px 300px / cover !important;
+}
+
+.tb_borda_mural{
+    --ion-background-color: #f2f2f2;
+    --background: #f2f2f2 url('img/BORDA---WALLPOST.png') no-repeat 0px 450px / cover !important;
+}
+
+
+ion-content{
+    --ion-background-color: #f2f2f2;
+}
+
+
+.inputMain
+{
+    --background: transparent;
+    border:none !important;
+    border-bottom: 2px solid $cor_fonte !important;
+    border-radius: 2px;
+    padding-right: 30px !important;
+}
+
+
+
+
+ion-item
+{
+    color: $cor_fonte;
+    --background: transparent ;
+    width: 100% !important;
+}
+
+ion-item.item-has-focus > ion-label{
+    color: $cor_fonte  !important;
+  }
+
+  ion-button {
+    text-transform: none;
+    font-family: 'Qanelas Regular';
+   }
+
+
+
+
+.toastClass{
+    color:#f2f2f2;
+    --border: 3px solid #f2f2f2;
+    --background: #f15a24;
+    text-align: center;
+    font-size:0.8em;
+    font-family: 'Qanelas Medium';
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5px;
+    padding-right: 5px;
+    // line-height: 0.5vh;
+    width: 100%;
+    height: 10%;
+    position:--end;
+    --border-radius: 50px;
+    margin-top: 80vh;
+    }
+
+ion-toggle{
+    --background-checked: #F15A24;
+    --handle-background: #F15a24;
+    ion-toggle:hover{
+        --handle-background:#f2f2f2;
+    }
+}
+
+.toastRegistro{
+    color:#f2f2f2;
+    --border: 3px solid #f2f2f2;
+    --background: #f15a24;
+    text-align: center;
+    font-size:0.8em;
+    font-family: 'Qanelas Medium';
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5px;
+    padding-right: 5px;
+    // line-height: 0.5vh;
+    width: 100%;
+    height: 15%;
+    outline: none;
+    --border-radius: 50px;
+    }
+
+
+    ion-spinner{
+        --color:#F15a24;
+    }
+
+
+
+
+    
+
+    .my-custom-class .popover-content {
+        border-radius: 20px;
+        --background: #f2f2f2 !important;
+      }
+
+      .myCode .popover-content {
+        // margin-bottom: 25px !important; 
+        // margin-right: 25px !important;
+        // margin-left: 25px !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        border-radius: 20px;
+        --background: #f2f2f2 no-repeat 0px 300px / cover !important;
+      }
+      
+
+    ion-loading{
+        box-shadow: none;
+    }
+
+//    ion-spinner{
+//     display: none;
+//    }
+    .cssLoad
+    {
+        color:$cor_fonte;
+        --background: white;
+        --color: white;
+        --backdrop-opacity: 1;
+        font-family: 'Qanelas Medium';
+
+        .loading-wrapper {
+            background: transparent;
+            box-shadow: none;
+          }
+          ion-backdrop{
+            
+            background: rgb(255,255,255) url('img/BORDA---WALLPOST.png') no-repeat 0px 450px / cover !important;
+        }
+
+        ion-spinner {
+            transform: scale(2);
+        }
+        
+
+        .logo{
+            font-size: 3em;
+            text-align: center;
+            margin-top: -150px;
+            font-family: 'Neo Sans';
+        }
+        .ld{
+            text-align: center;
+            font-size: 2em;
+            margin-top: -10px;
+        }
+
+        #spinner{
+            margin-top: -10px;
+            text-align: center;
+        }
+
+       
+    }
+
+    
+    

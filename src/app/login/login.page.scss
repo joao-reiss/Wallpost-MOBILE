@@ -1,0 +1,102 @@
+@import "../../global.scss";
+
+
+
+.btn_back{
+    
+    background-color: transparent;
+    font-family: 'Qanelas Regular';
+    font-size: 1em;
+    margin-top: 20%;
+    margin-left: -40%;
+    color: $cor_fonte;
+    line-height: 5px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: 0;
+    margin-bottom: 50%;
+}
+
+.btn_icon
+{  
+    outline: 0;
+    color: $cor_fonte;  
+    margin-top: -1%;
+    font-size: 10px;
+   
+}
+
+
+
+.logo{
+    color: $cor_fonte;
+    top: 55%;
+    font-size: 2.5em;
+    text-align: start;
+    margin-left: 10%;
+    font-family: 'Neo Sans';
+    margin-bottom: -0.1%;
+}
+
+.ph{
+    margin-top: -2%;
+    color: $cor_fonte;
+    text-align: start;
+    font-family: 'Qanelas Regular';
+    margin-left: 12%;
+}
+
+
+
+    .login
+    {
+        margin-top: 25%;
+    }
+
+    .inp_margin
+    {
+        margin-top: 3%;
+        
+    }
+
+    .p_style
+    {
+        font-family: 'Qanelas Regular';
+        color:  $cor_fonte;
+        font-size: 0.75em;
+        margin-left: -4%;
+        text-align: center;
+        outline: none;
+    }
+
+    .btn_login{
+        font-family: 'Qanelas Regular';
+        color: $cor_base;
+        background-color: $cor_fonte;
+        border: solid white 2px 2px ;
+        width: 200px;
+        height: 35px;
+        margin-right: auto;
+        margin-left: auto;
+        text-transform: uppercase;
+        font-weight: bold;
+        --border-radius: 30px;
+        border-radius: 30px;
+        cursor: pointer;
+        outline: 0;
+        }
+
+
+        .btn_row{
+            margin-top: 1%;
+            text-align: center;
+           
+            }
+
+            .spin
+            {
+                margin-top: -10px;
+                text-align: center;
+                --color: #f15a24;
+            }

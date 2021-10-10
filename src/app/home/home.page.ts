@@ -9,4 +9,8 @@ export class HomePage {
 
   constructor() {}
 
+  ngOnInit()
+  {
+    localStorage.setItem('login',  null)
+  }
 }

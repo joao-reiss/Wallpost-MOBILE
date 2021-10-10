@@ -1,0 +1,30 @@
+<ion-content class="tb_borda_estilo">
+  <ion-row>
+    <ion-col size="push-xs">
+      <ion-icon [routerLink]="['/login']" name="chevron-back-outline" size="large" class="btn_icon"></ion-icon>
+    </ion-col> 
+    <ion-col size="push-xs">
+      <button [routerLink]="['/login']"class="btn_back"> Voltar </button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12">
+      <p class="titulo">Recuperação de Conta</p>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12">
+     <ion-item lines="none" class="inp_margin">
+       <ion-label position="floating">Digite seu E-mail</ion-label>
+       <ion-input class="inputMain" disabled="{{talvez}}" [(ngModel)]="username" type="text"></ion-input>
+     </ion-item>
+    </ion-col>
+  </ion-row>
+  <section class="alinhamentoEstiloBtn">
+    <ion-row>
+      <ion-col size="12">
+          <button (click)="setEmail()" class="btn_enviar">Enviar</button>
+      </ion-col>
+    </ion-row>
+</section>
+</ion-content>

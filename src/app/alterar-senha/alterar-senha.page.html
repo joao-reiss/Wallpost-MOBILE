@@ -1,0 +1,128 @@
+<ion-content class="tb_borda_mural">
+  <ion-grid>
+    <ion-row>
+      <!-- INICIO DO BOTÃO DE VOLTAR -->
+          <ion-col size="push-xs">
+              <ion-icon [routerLink]="['/config']" name="chevron-back-outline" size="large" class="btn_icon"></ion-icon>
+          </ion-col>
+    <!-- FIM DO BOTÃO DE VOLTAR -->
+          
+
+    <!-- INICIO LOGO -->
+          <section class="ptAlign">
+            <ion-col size="12">
+                <p class="logo">WALLPOST</p>  
+            </ion-col>
+          </section>
+    <!-- FIM LOGO -->
+
+    <!-- INICIO CIRCULO -->    
+        <ion-col size="12">
+          <div class="circulo-a">
+          <section>
+            <span *ngIf="!img"><img class="circulo" src="../../assets/img/perfil.jpg"></span>
+            <span *ngIf="img"><img class="circulo" src="data:image/jpg;base64,{{user.imagem_user}}"></span>
+          </section>
+          </div>
+        </ion-col>  
+     <!-- FIM CIRCULO -->   
+    </ion-row>
+
+    <ion-row class="dsTop">
+      <ion-col size="12">
+        <p class="alterarSenha">Alterar Senha</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <section class="alinhamentoEstilo">
+          <p>Senha Atual</p>
+        </section>
+      </ion-col>
+    </ion-row>
+    <form [formGroup]="fGroup">
+      <ion-row>
+          <ion-col size="12">
+                  <ion-item lines="none" class="inputAlterar">  
+                    <ion-input  type="{{type}}"  name="password" formControlName="cd_senha"></ion-input>
+                        <span *ngIf="showPass" type="button" 
+                        (click)="showPassword()">
+                        <img class="eye"src="../../assets/img/invisible.png">
+                  </span>
+                        <span *ngIf="!showPass"  type="button" 
+                            (click)="showPassword()">
+                            <img class="eye" src="../../assets/img/visible.png">
+                        </span>
+                  </ion-item>
+          </ion-col>      
+    </ion-row>
+   
+  </form>
+        <ion-row>
+          <ion-col size="12">
+            <section class="alinhamentoEstilo">
+              <p>Nova Senha</p>
+            </section>
+          </ion-col>
+        </ion-row>
+        <form [formGroup]="fGroup">
+          <ion-row>
+              <ion-col size="12">
+                      <ion-item lines="none" class="inputAlterar">  
+                        <ion-input class="inputAlterar"  type="{{type2}}"  name="newpassword" formControlName="cd_novasenha"></ion-input>
+                            <span *ngIf="!showPass2" type="button" 
+                            (click)="showPassword2()">
+                            <img class="eye"src="../../assets/img/invisible.png">
+                      </span>
+                            <span *ngIf="showPass2"  type="button" 
+                                (click)="showPassword2()">
+                                <img class="eye" src="../../assets/img/visible.png">
+                            </span>
+                      </ion-item>
+              </ion-col>  
+        </ion-row>
+        <div class="errors">
+          <span>{{ifUserError.newRequired}}</span>   
+          <span>{{ifUserError.newMinError}}</span>
+          <span>{{ifUserError.newMaxError}}</span>
+          </div>       
+      </form>
+        <ion-row>
+          <ion-col size="12">
+            <section class="alinhamentoEstilo">
+              <p>Confirmar Nova Senha</p>
+            </section>
+          </ion-col>
+        </ion-row>
+          <ion-row>
+              <ion-col size="12">
+                      <ion-item lines="none" class="inputAlterar">  
+                        <ion-input class="inputAlterar"  type="{{type3}}"  name="cnewpassword" [(ngModel)]="newpassword"></ion-input>
+                            <span *ngIf="!showPass3" type="button" 
+                            (click)="showPassword3()">
+                            <img class="eye"src="../../assets/img/invisible.png">
+                      </span>
+                            <span *ngIf="showPass3"  type="button" 
+                                (click)="showPassword3()">
+                                <img class="eye" src="../../assets/img/visible.png">
+                            </span>
+                      </ion-item>
+              </ion-col>
+        </ion-row>
+        <section class="alinhamentoEstiloBtn">
+            <ion-row>
+              <ion-col size="12">
+                  <ion-button (click)="UpdateSenha()" class="btn_salvar">Salvar</ion-button>
+              </ion-col>
+            </ion-row>
+        </section>
+        <div class="errors">
+          <span>{{minError}}</span>  
+          <span>{{ifUserError.Required}}</span>   
+          <span><h1>{{ifUserError.minError}}</h1></span>
+          <span>{{ifUserError.maxError}}</span>
+        </div>
+
+  </ion-grid>
+</ion-content>

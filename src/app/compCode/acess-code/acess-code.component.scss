@@ -1,0 +1,42 @@
+@import "../../../global.scss";
+
+.popContent
+{
+    background: #f2f2f2 url('../../../img/BORDA---WALLPOST.png') no-repeat 10px -100px / cover !important;
+    font-family: 'Qanelas Regular';
+    font-size: 1em;
+    color: #f15a24;
+
+}
+
+.lbl
+{
+    font-family: 'Qanelas Regular';
+}
+
+.btnPop{
+
+    color: $cor_base;
+    border: none;
+    background-color: $cor_fonte;
+    width: 150px;
+    height: 30px;
+    font-family: 'Qanelas Regular';
+    border-radius: 30px;
+    --border-radius: 30px;
+    font-size: 0.80em;
+    outline: none;
+}
+
+.btn_Align
+{
+    margin-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+   
+}
+
+.inp_margin
+{
+    margin-top: 10px;
+}

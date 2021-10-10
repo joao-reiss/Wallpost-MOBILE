@@ -1,0 +1,180 @@
+@import "../../global.scss";
+
+
+.ptAlign
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+
+.logo{
+    margin-top: -10px;
+    color: $cor_fonte;
+    font-size: 1.5em;
+    margin-left: -20%;
+    
+    font-family: 'Neo Sans';
+}
+
+
+.circulo{
+    object-fit: cover;
+    background-color:rgb(216, 209, 209);
+    background-size: 100%;
+    background-position: center;
+    max-width: 35px;
+    max-height: 35px;
+    min-width: 35px;
+    min-height: 35px;
+    border-radius: 100%;
+}
+
+.circulo-a{
+    margin-left: 9%;
+    padding-left: 80%;
+    margin-top: -80px;
+   
+}
+
+
+.btn_icon
+{  
+    outline: 0;
+    color: $cor_fonte;  
+    margin-top: -1%;
+    font-size: 10px;
+   
+}
+
+.desc
+{
+    text-align: auto;
+    margin-left: 0.5%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #dcdcdc;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: auto;
+    width: auto;
+    padding-right: 5%;
+    padding-left: 5%;
+    border-radius: 10px;
+    outline: none;
+
+    p{
+        font-size: 0.80em;
+        font-family: 'Qanelas Regular';
+    }
+}
+
+.sPost
+{  
+    margin-bottom: -10px;
+    max-height: 70vh;
+    max-width: 50vh;
+}
+
+.aPost
+{ 
+    object-position: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pAlign
+{
+    margin-top: 15px;
+}
+
+.nMural
+{
+    font-family: 'Qanelas Bold';
+}
+
+.nPMural
+{
+    margin-top: -16px;
+    font-family: 'Qanelas Regular';
+}
+
+.lblFav
+{
+    font-family: 'Qanelas Regular';
+}
+
+.tgFav
+{
+   bottom: -15px;
+}
+
+.aTitle
+{
+    margin-left: 10%;
+}
+
+.pTitle
+{
+    margin-top: -5px;
+    margin-bottom: -45px;
+    margin-left: 2%;
+    font-family: 'Qanelas Bold';
+}
+
+.notFound
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lblNotFound
+{
+    font-family: 'Qanelas Regular';
+    font-size: 1em;
+
+}
+.iconNotFound
+{
+    font-size: 6em;
+}
+
+#quadrado
+{
+    border: solid $cor_base 2px;
+    // max-width: 50px;
+    // max-height: 50px;
+    padding-left: -50vh !important;
+    background-color: $cor_fonte;    
+}
+.icon
+{
+    margin-left: 85%;
+    // margin-right: 78%;
+    transform: (-50%, -50%);
+    background-color: $cor_fonte;
+    border-radius: 10px;
+    color: $cor_base;   
+    font-size: 1.5em;
+    margin-bottom: -55px;
+    min-width: 30px;
+    min-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.imgPost
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    object-fit: cover;
+    height: 65vh;
+    width: 50vh;
+    border-radius: 15px;
+    outline: none;
+}

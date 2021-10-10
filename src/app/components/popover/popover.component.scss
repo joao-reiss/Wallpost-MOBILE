@@ -1,0 +1,96 @@
+@import "../../../global.scss";
+
+.popContent
+{
+    // background: #f2f2f2 url('../../../img/BORDA---WALLPOST.png') no-repeat -50px -120px / cover !important;
+    font-family: 'Qanelas Regular';
+    font-size: 1em;
+    color: #f15a24;
+
+}
+
+#header
+{
+    padding-top: 22px;
+    padding-bottom: 22px;
+    background: var(--ion-color-primary) url('../../../img/BORDA---WALLPOST---white.png') no-repeat -50px -70px / cover !important;
+    background-size: 400px !important;
+    color: var(--ion-color-step-600);
+}
+
+.popover-content {
+    background: #f2f2f2;
+  }
+
+.poplbl{
+    text-align: center;
+    font-family: 'Qanelas Medium';
+    font-size: 1.1em;
+    color: #f15a24;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.popP{
+    
+    font-family: 'Qanelas Regular';
+    font-size: 1em;
+    color: #f15a24;
+}
+
+.btnPop{
+    color: $cor_base;
+    border: none;
+    background-color: $cor_fonte;
+    width: 170px;
+    height: 35px;
+    font-family: 'Qanelas Regular';
+    --border-radius: 30px;
+    border-radius: 50px;
+    font-size: 1em;
+    outline: none;
+}
+
+.btn_Align
+{
+    margin-top: -10px;
+  text-align: center;
+  margin-bottom: 20px;
+   
+}
+  
+.avatarpic{
+    margin-top: -40px;
+    border: solid 5px var(--ion-color-step-600);
+    object-fit: cover;
+    max-width: 90px;
+    max-height: 90px;
+    min-width: 90px;
+    min-height: 90px;      
+    border-radius: 100%;
+}
+
+.avatarpic-a{
+    margin-left: 15px;
+   
+   
+}
+
+// .iconSize
+// {
+//     // --font-size:1.5em;
+   
+// }
+
+.spin
+    {
+        --size: 30px;
+        --color: #f15a24;
+    }
+
+    // .avatarpic{
+        
+    //     background-size: 100%;
+    //     background-position: center;
+    // }
+   

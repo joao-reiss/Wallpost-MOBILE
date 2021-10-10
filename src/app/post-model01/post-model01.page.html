@@ -1,0 +1,92 @@
+<ion-content class="tb_borda_mural">
+  
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content>    
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-grid>
+ 
+    <ion-row>
+      <!-- INICIO DO BOTÃO DE VOLTAR -->
+          <ion-col size="push-xs">
+              <ion-icon (click)="btnBack()" name="chevron-back-outline" size="large" class="btn_icon"></ion-icon>
+          </ion-col>
+    <!-- FIM DO BOTÃO DE VOLTAR -->
+          
+
+    <!-- INICIO LOGO -->
+          <section class="ptAlign">
+            <ion-col size="12">
+                <p class="logo">WALLPOST</p>  
+            </ion-col>
+          </section>
+    <!-- FIM LOGO -->
+
+    <!-- INICIO CIRCULO -->    
+        <ion-col size="12">
+          <div class="circulo-a">
+            <section>
+              <span *ngIf="!img"><img class="circulo" src="../../assets/img/perfil.jpg" (click)="showPopOver($event)"></span>
+              <span *ngIf="img"><img class="circulo" src="data:image/jpg;base64,{{user.imagem_user}}" (click)="showPopOver($event)"></span>
+            </section>
+          </div>
+        </ion-col>
+     <!-- FIM CIRCULO -->   
+    </ion-row>
+
+    <ion-row>
+      <section class="aTitle">
+    
+          <ion-col size="12">
+            <p class="nPost"><b>{{post.nm_post}}</b></p>
+          </ion-col>
+        
+          <ion-col size="12">
+            <p class="nMural">{{user.nm_usuario}}</p>
+          </ion-col>
+
+      </section>
+    </ion-row>
+
+  <ion-row>
+
+  
+     
+      
+
+   
+
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12">
+      <section class="aPost" >
+        <img class="sPost" src="data:image/jpg;base64,{{post.imagem}}">
+
+      </section>
+      
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12">
+
+      <section class="desc">
+        <p>{{post.ds_post}}</p>
+        
+        <div class="btn_Align">
+          <span *ngIf="link">
+            <section>
+              <ion-button name="btn-site" class="btn_site" (click)="openLink()">Site</ion-button>
+            </section>
+          </span>   
+         
+        </div>
+       
+      </section>
+
+    </ion-col>
+  </ion-row>
+
+  </ion-grid>
+</ion-content>

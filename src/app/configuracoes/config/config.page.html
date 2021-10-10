@@ -1,0 +1,146 @@
+<ion-content class="tb_borda_mural">
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content>    
+        </ion-refresher-content>
+      </ion-refresher>
+      
+    <ion-grid>
+
+      <ion-row>
+        <!-- INICIO DO BOTÃO DE VOLTAR -->
+            <ion-col size="push-xs">
+                <ion-icon (click)="btnBack()" name="chevron-back-outline" size="large" class="btn_icon"></ion-icon>
+            </ion-col>
+      <!-- FIM DO BOTÃO DE VOLTAR -->
+            
+  
+      <!-- INICIO LOGO -->
+            <section class="ptAlign">
+              <ion-col size="12">
+                  <p class="logo">WALLPOST</p>  
+              </ion-col>
+            </section>
+      <!-- FIM LOGO -->
+  
+      <!-- INICIO CIRCULO -->    
+            <ion-col size="12">
+                <div class="circulo-a">
+                <section>
+                    <span *ngIf="!img"><img class="circulo" src="../../assets/img/perfil.jpg"></span>
+                    <span *ngIf="img"><img class="circulo" src="data:image/jpg;base64,{{user.imagem_user}}"></span>
+                </section>
+                </div>
+            </ion-col>  
+       <!-- FIM CIRCULO -->   
+      </ion-row>
+        <!-- INICIO TITULO -->
+        <ion-row>
+            <ion-col size="12">
+                <div class="alinhamentoC">
+                    <p class="conta">Conta</p>
+                </div>
+            </ion-col>
+        </ion-row>
+        <!-- FIM TITULO -->
+            <ion-row>
+                <ion-col size="12">
+
+                    <div class="cAPerfil">
+                        <section>
+                            
+                            <span *ngIf="!img && !newImg"><img class="cPerfil" src="../../assets/img/perfil.png"></span>
+                            <span  for="selectImg" *ngIf="img && !newImg"> <img class="cPerfil" src="data:image/jpg;base64,{{user.imagem_user}}"></span>
+                            <span  for="selectImg" *ngIf="newImg"> <img class="cPerfil" src="data:image/jpg;base64,{{aux}}"></span>
+                            
+                              <ion-button class="iconBtn" (click)="openGallery()"> + </ion-button>
+                              
+                        
+                            <p class="ftPerfil">Foto de Perfil</p>
+                         
+                            
+                        </section>
+                        <div>
+                            
+                        </div>
+                    </div>
+                   
+                   
+                </ion-col>
+               
+            </ion-row>
+
+        <form [formGroup]="fGroup">
+
+            <section>
+                <ion-row class="ali">
+                    <ion-col class="userData" size="12">
+                        <p>Nome de Usuário</p>
+                    </ion-col>
+                </ion-row>
+           
+                
+                <ion-row>      
+                    <ion-col size="12">
+                        <ion-item class="inputAli" lines="none">
+                            <ion-input class="inputStyle" placeholder="{{user.nm_usuario}}" formControlName="nm_usuario"></ion-input>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+                
+                <ion-row class="ali aliV2">
+                    <ion-col class="userData" size="12">
+                        <p>Email</p>
+                    </ion-col>
+                </ion-row>
+           
+                
+                    <ion-row>      
+                        <ion-col size="12">
+                            <ion-item class="inputAli" lines="none">
+                                <ion-input class="inputStyle" placeholder="{{user.ds_email}}" formControlName="ds_email"></ion-input>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+
+
+                    <ion-row class="ali aliV2">
+                        <ion-col class="userData" size="12">
+                            <p>Celular</p>
+                        </ion-col>
+                    </ion-row>
+               
+                    
+                        <ion-row>      
+                            <ion-col size="12">
+                                <ion-item class="inputAli" lines="none">
+                                    <ion-input  type="tel" class="inputStyle" placeholder="{{user.ds_celular}}" formControlName="ds_celular" [brmasker]="{phone: true}" ></ion-input>
+                                </ion-item>
+                            </ion-col>
+                        </ion-row>
+            </section>
+
+        </form>
+                
+                        <section class="alinhamentoEstiloBtn">
+                            <ion-row>
+
+                                        <ion-col size="12">
+                                            <ion-button [routerLink]="['/alterar-senha']" class="btn_salvar">Alterar Senha</ion-button>
+                                        </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                    <ion-col size="12">
+                                        <ion-button type="submit" (click)="Salvar(fGroup)" class="btn_salvar">Salvar</ion-button>
+                                    </ion-col>
+                            </ion-row>
+                        </section>
+                
+                        
+                
+                           
+
+                
+           
+       
+    </ion-grid>
+</ion-content>

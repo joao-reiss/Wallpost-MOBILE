@@ -1,0 +1,108 @@
+<ion-content class="tb_borda_mural">
+
+  
+      <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content>    
+        </ion-refresher-content>
+      </ion-refresher>
+      <ion-grid>
+ 
+    <ion-row>
+      <!-- INICIO DO BOTÃO DE VOLTAR -->
+          <ion-col size="push-xs">
+              <ion-icon (click)="back()" name="chevron-back-outline" size="large" class="btn_icon"></ion-icon>
+          </ion-col>
+    <!-- FIM DO BOTÃO DE VOLTAR -->
+          
+
+    <!-- INICIO LOGO -->
+          <section class="ptAlign">
+            <ion-col size="12">
+                <p class="logo">WALLPOST</p>  
+            </ion-col>
+          </section>
+    <!-- FIM LOGO -->
+
+    <!-- INICIO CIRCULO -->    
+          <ion-col size="12">
+            <div class="circulo-a">
+              <section>
+                <span *ngIf="!img"><img class="circulo" src="../../assets/img/perfil.jpg" (click)="showPopOver($event)"></span>
+                <span *ngIf="img"><img class="circulo" src="data:image/jpg;base64,{{user.imagem_user}}" (click)="showPopOver($event)"></span>
+              </section>
+            </div>
+          </ion-col>
+     <!-- FIM CIRCULO -->   
+    </ion-row>  
+
+    <ion-row>
+
+      <ion-col size="6">
+        <section class="aTitle">
+          <div>
+            <p class="nMural"><b>{{mural.nm_mural}}</b></p>
+          </div>
+          <p class="nPMural">{{user.nm_usuario}}</p>
+        </section>
+      </ion-col>
+
+    
+      <ion-col size="6">
+        <ion-label class="lblFav">{{favorito}}</ion-label>
+        <ion-col size="12">
+          <ion-toggle class="tgFav" (ionChange)="SwFav()" [(ngModel)]="tgFavorite"></ion-toggle>
+        </ion-col>
+      </ion-col>
+
+
+    </ion-row>
+
+  <ion-row>
+
+  
+     
+      
+
+   
+
+  </ion-row>
+      
+  <ion-row>
+    <ion-col size="12">
+
+      <section class="desc">
+        <p>
+         {{mural.ds_mural}}
+        </p>
+          
+      </section>
+
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <span *ngIf="post==''">
+      <ion-col size="12">
+        <section class="notFound">
+          <ion-icon class="iconNotFound" name="thumbs-down-outline"></ion-icon>
+          <p class="lblNotFound">Desculpe este mural ainda não possúi um Post :/</p>
+        </section>
+      </ion-col>
+    </span>
+  <section class="aPost" *ngFor="let p of post">
+    <ion-col size="12">
+      <p class="pTitle">{{p.nm_post}}</p>
+    </ion-col>
+    <ion-col size="12">
+      <section class="pAlign sPost"  (click)="postPage(p.idpost)" >
+        
+        <ion-icon class="icon" name="enter-outline"></ion-icon>
+        <img class="imgPost"  src="data:image/jpg;base64,{{p.imagem}}">
+          
+      </section>
+      
+    </ion-col>
+  </section>
+  </ion-row>
+  </ion-grid>
+</ion-content>

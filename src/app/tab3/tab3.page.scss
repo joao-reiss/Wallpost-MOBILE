@@ -1,0 +1,125 @@
+@import "../../global.scss";
+
+
+.logo{
+    color: $cor_fonte;
+    margin-top: 10px;
+    font-size: 1.5em;
+    text-align: start;
+    margin-left: 10%;
+    font-family: 'Neo Sans';
+    margin-bottom: -0.1%;
+}
+
+.circulo{
+    margin-top: 5%;
+    border: 5px 5px 5px 5px solid rgb(216, 209, 209);
+    background-color:rgb(216, 209, 209);
+    padding-top: 30%;
+    padding-bottom: 30%;
+    width: 60%;
+    height: 45%;
+    border-radius: 100%;
+}
+
+.circulo-a{
+    padding-left: 70%;
+    margin-top: 5px;
+    // margin-right: 70%;
+}
+
+.cPerfil{
+    margin-top: 5px;
+    background-color:gray;
+    background: url("../../assets/img/aaaaa.png") no-repeat;
+    background-size: 18vh;
+    background-position: center;
+    padding-top: 5vh;
+    max-width: 15vh;
+    max-height: 15vh;
+    padding-bottom: 5vh;
+    width: 18vh;
+    height: 18vh;
+    border-radius: 100%;
+}
+
+
+.cAPerfil
+{
+    margin-left: 20%;
+}
+
+.alinhamentoC
+{   
+    margin-top: 40px;
+    margin-bottom: -10%;
+}
+
+.conta
+{
+    font-family: 'Qanelas Bold';
+    font-size: 1.5em;
+    margin-left: 12%;
+}
+
+.ftPerfil
+{
+    font-size: 0.70em;
+    font-family: 'Qanelas Regular';
+    margin-top: 60px;
+    margin-left: -10px;   
+}
+
+.alEs2
+{
+    margin-top: -20px;
+}
+.alinhamentoEstilo
+{
+    margin-left: 10%;
+    font-family: 'Qanelas SemiBold';
+    margin-bottom: -10px;
+    margin-top: -20px;
+}
+
+.labelDoPai
+{
+    margin-top: -15px;
+    margin-left: 5%;
+    color: $cor_fonte;
+    border: none;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    width: 300px;
+    height: 35px;
+    font-family: 'Qanelas Regular';
+    border-radius: 30px;
+}
+
+.btn_salvar
+{
+    margin-left: -5%;
+    color: $cor_base;
+    border: none;
+    background-color: $cor_fonte;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    width: 300px;
+    height: 35px;
+    font-family: 'Qanelas Regular';
+    border-radius: 30px;
+    outline: none;
+}
+
+.alinhamentoEstiloBtn   
+{
+    margin-left: 10%;
+    margin-top: 10px;
+    
+
+}

@@ -1,0 +1,70 @@
+<ion-content class="tb_borda_estilo">
+
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content>    
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <ion-grid>
+
+    <section class="margem">
+
+      <ion-row>
+          <ion-col size="6">
+              <p class="logo">WALLPOST</p>  
+          </ion-col>
+
+          <ion-col size="6">
+              <div class="circulo-a">
+              <section>
+                <span *ngIf="!img"><img class="circulo" src="../../assets/img/perfil.jpg" (click)="showPopOver($event)"></span>
+                <span *ngIf="img"><img class="circulo" src="data:image/jpg;base64,{{user.imagem_user}}" (click)="showPopOver($event)"></span>
+              </section>
+              </div>
+          </ion-col>
+      </ion-row>
+
+      <ion-row>
+          <ion-col size="12">
+            <p class="subtitulo"> Meus Murais </p>
+          </ion-col>
+          <ion-col size="12">
+            <ion-searchbar debounce="500" (ionChange)="getItems($event)" placeholder="" class="inp-home"  clearInput></ion-searchbar>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+      
+        <span *ngIf="mural==''" class="notFound">
+          <ion-col size="12">
+
+              <section >
+                <ion-icon class="iconNotFound" name="close-circle-outline"></ion-icon>
+                <p class="pNotFound">Ainda não há Murais Disponíveis!</p>
+                <ion-button  class="btnNotFound" (click)="notFound()">Deseja Vincular-se?</ion-button>
+              </section>
+
+          </ion-col>
+         
+        </span>
+        <ion-col size="12" *ngFor="let m of mural; let mp of muralPesquisado">
+          <span *ngIf="isItemAvailable">
+
+            <section class="mural2Estilo" (click)="enterMural(mp.mural.idmural)">
+              <ion-icon class="icon" name="enter-outline"></ion-icon><br>
+              <p>{{mp.mural.nm_mural}}</p> 
+            </section>
+
+          </span>
+          <span *ngIf="!isItemAvailable">
+            <section class="mural2Estilo" (click)="enterMural(m.mural.idmural)">
+              <ion-icon class="icon" name="enter-outline"></ion-icon><br>
+              <p>{{m.mural.nm_mural}}</p>
+             
+            </section>
+          </span>
+        </ion-col>
+      
+      </ion-row>
+    </section>
+  </ion-grid>  
+</ion-content>

@@ -1,0 +1,128 @@
+@import "../../global.scss";
+
+
+.ptAlign
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+
+.logo{
+    margin-top: -10px;
+    color: $cor_fonte;
+    font-size: 1.5em;
+    margin-left: -20%;
+    
+    font-family: 'Neo Sans';
+}
+
+
+.circulo{
+    object-fit: cover;
+    background-color:rgb(216, 209, 209);
+    background-size: 100%;
+    background-position: center;
+    max-width: 35px;
+    max-height: 35px;
+    min-width: 35px;
+    min-height: 35px;
+    border-radius: 100%;
+}
+
+.circulo-a{
+    margin-left: 9%;
+    padding-left: 80%;
+    margin-top: -80px;
+   
+}
+
+
+.btn_icon
+{  
+    outline: 0;
+    color: $cor_fonte;  
+    margin-top: -1%;
+    font-size: 10px;
+   
+}
+
+.desc
+{
+    text-align: justify;
+    margin-left: 0.5%;
+    margin-top: 0.5vh;
+    // border: 2px black solid;
+    color: $cor_base;
+    background-color: $cor_fonte;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 20% auto;
+    width: 10% auto;
+    padding-right: 5%;
+    padding-left: 5%;
+    border-radius: 5px;
+    outline: none;
+
+    p{
+        font-size: 0.80em;
+        font-family: 'Qanelas Regular';
+    }
+}
+
+.sPost
+{
+    object-fit: cover;
+    height: 65vh;
+    width: 95%;
+    border-radius: 26px;
+    outline: none;
+}
+.aPost
+{
+    text-align: center;
+}
+
+.nMural
+{
+    margin-top: -45px;
+    font-family: 'Qanelas Regular';
+    font-size: 1.2em;
+}
+
+.nPost
+{
+    font-size: 1.8em;
+    margin-top: -30px;
+    font-family: 'Qanelas Bold';
+}
+
+.lblFav
+{
+    font-family: 'Qanelas Regular';
+}
+
+.aTitle
+{
+    margin-left: 5%;
+}
+
+.btn_site{
+    text-align: center;
+    font-family: 'Qanelas Regular';
+    color: $cor_fonte;
+    --background: #f1f1f1;
+    width: 100px;
+    height: 30px;
+    line-height: 10px;
+    border-radius: 20px;
+    --border-radius: 20px;
+    cursor: pointer;
+    outline: 0;
+    margin-bottom: 5%;
+    }
+.btn_Align
+{
+    text-align: center;
+}

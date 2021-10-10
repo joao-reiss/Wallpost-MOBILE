@@ -1,0 +1,215 @@
+@import "../../../global.scss";
+
+
+.btn_icon
+{  
+    outline: 0;
+    color: $cor_fonte;  
+    margin-top: -1%;
+    font-size: 10px;
+   
+}
+
+.ptAlign
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+
+.logo{
+    margin-top: -10px;
+    color: $cor_fonte;
+    font-size: 1.5em;
+    margin-left: none;
+    margin-left: -20%;
+    
+    font-family: 'Neo Sans';
+}
+
+
+.circulo{
+    background-color:rgb(216, 209, 209);
+    background-size: 100%;
+    background-position: center;
+    max-width: 35px;
+    max-height: 35px;
+    min-width: 35px;
+    min-height: 35px;
+    border-radius: 100%;
+}
+
+.circulo-a{
+    margin-left: 9%;
+    padding-left: 80%;
+    margin-top: -80px;
+   
+}
+
+
+
+
+.cPerfil
+{
+
+    object-fit: cover;
+    background-position: center;
+    background-color: $cor_base;
+    margin-top: 5px;
+    max-width: 150px;
+    max-height: 150px;
+    min-height: 150px;
+    min-width: 150px;
+    border-radius: 50%;
+}
+
+.ftPerfil
+{
+    font-size: 0.70em;
+    font-family: 'Qanelas Regular';
+    margin-top:-70px;
+    position: absolute;
+    margin-left: 160px;
+}
+
+.inputPerfil{
+
+    background-color: $cor_fonte;
+    font-size: 2em;
+    border-radius:20px;
+    max-width: 90px;
+    max-height: 90px;
+    min-width: 90px;
+    min-height: 90px;
+    color: white;
+    // padding-right: 100PX;
+    // padding-left: 100px;
+    font-family: 'Qanelas Regular';
+}
+
+.icon
+{
+    margin-top: 10vh;
+    margin-left: -7vh;
+    font-size: 1.7em;
+    // font-weight: bold;
+    width: 5px;
+    height: 5px;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 100%;
+    background-color: $cor_fonte;
+    color:$cor_base;
+    transition: 0.2s linear;
+    // color: $cor_fonte;
+    // background-color: $cor_base;
+}
+
+.iconBtn
+{
+    position: relative;
+    margin-top: -42px;
+    margin-left: -37px;
+    font-size: 1.5em;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    --width: 25px;
+    --height: 25px;
+    --padding-top: -111px;
+    --padding-bottom: -111px;
+    --padding-start: 12px;
+    --padding-end: 12px;
+    --border-radius: 100%;
+    --background-color: $cor_fonte;
+    color:$cor_base;
+
+}
+
+
+
+.inpAli
+{
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 14px;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+
+.cAPerfil
+{
+    margin-left: 7%;
+}
+
+.alinhamentoC
+{   
+    margin-top: -50px;
+    margin-bottom: -10%;
+}
+
+.conta
+{
+    font-family: 'Qanelas Bold';
+    font-size: 1.5em;
+    margin-left: 12%;
+}
+
+
+.userData
+{
+    font-family: 'Qanelas SemiBold';
+    margin-left: 5px;
+}
+
+
+
+
+.btn_salvar
+{
+    color: $cor_base;
+    border: none;
+    background-color: $cor_fonte;
+    width: 300px;
+    height: 35px;
+    font-family: 'Qanelas Regular';
+    border-radius: 30px;
+    --border-radius: 30px;
+    outline: none;
+    font-size: 1.1em;
+}
+
+.alinhamentoEstiloBtn   
+{
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.ali{
+    // margin-top: 50px;
+    margin-left: 5%;
+}
+.aliV2{
+    margin-top: -15px;
+}
+
+.inputAli{
+   margin-top: -25px;
+}
+
+.inputStyle
+{  
+    --padding-start: 10px !important; 
+    color: $cor_fonte;  
+    background-color: white;
+    max-width: 500px;
+    max-height: 35px;
+    font-family: 'Qanelas Regular';
+    border-radius: 30px;
+    --placeholder-opacity: 1 !important;
+}

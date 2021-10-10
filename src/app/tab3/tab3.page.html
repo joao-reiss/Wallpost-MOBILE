@@ -1,0 +1,107 @@
+<ion-content class="tb_borda_mural">
+    <ion-grid>
+
+            <ion-row>
+
+                <!-- INICIO LOGO   -->
+                <ion-col size="6">
+                  <p class="logo">WALLPOST</p>  
+                </ion-col>
+                <!-- FIM LOGO -->
+
+                <!-- INICIO CIRCULO -->
+                <ion-col size="6">
+                  <div class="circulo-a">
+                  <section class="circulo" >
+                  </section>
+                  </div>
+                </ion-col>
+                <!-- FIM CIRCULO -->
+
+              </ion-row>
+
+            <!-- INICIO TITULO -->
+            <ion-row>
+                <ion-col size="12">
+                    <div class="alinhamentoC">
+                        <p class="conta">Conta</p>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <!-- FIM TITULO -->
+            <ion-row>
+                <ion-col size="6">
+
+                    <div class="cAPerfil">
+                        <section class="cPerfil" (click)="testeEduardoViado()" >
+                        </section>
+                    </div>
+
+                </ion-col>
+                <ion-col size="6">
+                    <p class="ftPerfil">Foto de Perfil</p>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <section class="alinhamentoEstilo alEs2">
+                    <ion-col size="12">
+                        <p>Nome de Usuário</p>
+                    </ion-col>
+                </section>
+
+                <section class="labelDoPai">
+                        <ion-col size="12">
+                            <ion-label>Ruthinha</ion-label>
+                        </ion-col>
+                </section>   
+            </ion-row>
+
+            <ion-row>
+            <section class="alinhamentoEstilo">
+                    <ion-col size="12">
+                        <p>Email</p>
+                    </ion-col>
+            </section>
+            </ion-row>
+
+            <ion-row>
+
+            </ion-row>
+                    <section class="labelDoPai">
+                        <ion-col size="12">
+                            <ion-label>Ruthinha@outlook.com</ion-label>
+                        </ion-col>
+                    </section>
+            <ion-row>
+                <section class="alinhamentoEstilo">
+                <ion-col size="12">
+                    <p>Telefone</p>
+                </ion-col>
+            </section>
+            <section class="labelDoPai">
+                    <ion-col size="12">
+                        <ion-label>(13) 3444-2999</ion-label>
+                    </ion-col> 
+            </section>
+            </ion-row>
+
+            <section class="alinhamentoEstiloBtn">
+            <ion-row>
+           
+                        <ion-col size="12">
+                            <button [routerLink]="['/alterar-senha']" class="btn_salvar">Alterar Senha</button>
+                        </ion-col>
+           
+            </ion-row>
+            <ion-row>
+                    <ion-col size="12">
+                        <button [routerLink]="['/']" class="btn_salvar">Salvar</button>
+                    </ion-col>
+     
+
+            </ion-row>
+            </section>   
+       
+    </ion-grid>
+</ion-content>

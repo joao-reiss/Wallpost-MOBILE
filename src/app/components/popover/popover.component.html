@@ -1,0 +1,39 @@
+<section class="popContent">
+  <section id="header">
+    <ion-row>
+      <!-- <ion-label>É NOISSS</ion-label> -->
+    </ion-row>
+  </section>
+ 
+    <ion-row>
+          <ion-col size="6">
+                <p class="poplbl" >Olá, <br> {{user.nm_usuario}}</p>
+            <ion-col size="6"></ion-col>
+          </ion-col>
+          <ion-col size="6">
+            <ion-col size="12">
+              <ion-avatar class="avatarpic-a">
+                <span *ngIf="!img"><img class="avatarpic" src="../../assets/img/perfil.jpg"></span>
+                <span *ngIf="img"> <img class="avatarpic" src="data:image/jpg;base64,{{user.imagem_user}}"></span>
+              </ion-avatar>
+            </ion-col>
+          </ion-col>
+    </ion-row>
+  
+      <section class="btn_Align">
+        
+        <ion-row>
+          <ion-col size="12">
+            <ion-button class="btnPop" (click)="ConfigPage()">Configurações<ion-icon class="iconSize" name="settings-outline"></ion-icon></ion-button>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+          <ion-col size="12">
+            <ion-button class="btnPop" (click)="sair()">Deslogar   <ion-icon class="iconSize" name="log-out-outline"></ion-icon></ion-button>
+          </ion-col>
+        </ion-row>
+  
+      </section>
+  
+  </section>

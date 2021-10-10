@@ -1,0 +1,27 @@
+<section class="popContent">
+  <ion-row>
+    <ion-col size="12">
+        <!-- código de acesso -->
+        <form [formGroup]="fGroup">
+
+          <ion-item   lines="none" class="inp_margin">
+            <ion-label class="lbl" position="floating">Código de Acesso</ion-label>
+            <ion-input type="text" class="inputMain" formControlName="cd_chave" ></ion-input>
+          </ion-item>
+
+        </form>
+
+    </ion-col>
+  </ion-row>
+
+  <div class="btn_Align">
+    <ion-row>
+      <ion-col size="12">
+        <ion-button class="btnPop" (click)="buscarChave()">Confirmar</ion-button>
+      </ion-col>
+    </ion-row>
+
+  </div>
+  
+
+</section>
